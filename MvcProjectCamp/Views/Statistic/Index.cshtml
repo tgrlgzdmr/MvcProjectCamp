@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+
+
+
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-info">
+            <span class="info-box-icon"><i class="far fa-bookmark"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">Number Of Categories</span>
+                <span class="info-box-number">@ViewBag.categorycount</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-fuchsia">
+            <span class="info-box-icon"><i class="far fa-bookmark"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">Number Of Headings Where Category Name == Series</span>
+                <span class="info-box-number">@ViewBag.headingbycategory</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-success">
+            <span class="info-box-icon"><i class="far fa-bookmark"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">Number Of Authors With "a" In Their Name</span>
+                <span class="info-box-number">@ViewBag.writernuberwitha</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-warning">
+            <span class="info-box-icon"><i class="far fa-bookmark"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">Category With The Most Headings</span>
+                <span class="info-box-number">@ViewBag.FilterByCategoryId</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-danger">
+            <span class="info-box-icon"><i class="fas fa-bookmark"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">Numerical Difference Between True and False Category</span>
+                <span class="info-box-number">@ViewBag.CategoryCountBySituation</span>
+            </div>
+        </div>
+    </div>
+
